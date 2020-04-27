@@ -1,0 +1,12 @@
+@mixin fontLight {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+@mixin fontRegular {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+$textHuge: 40px;
+$textBig: 30px;
+$textMedium: 20px;
+$textSmall: 15px;

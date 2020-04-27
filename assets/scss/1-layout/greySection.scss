@@ -1,0 +1,35 @@
+.greySection {
+  background: $lightGrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+  .title {
+    @include fontRegular;
+    font-size: $textHuge;
+    color: $darkGrey;
+    text-transform: capitalize;
+    &--small {
+      font-size: $textBig;
+      margin: 20px 0;
+    }
+  }
+  .subtitle {
+    @include fontLight;
+    font-size: $textMedium;
+    color: $grey;
+    padding: 10px 20px 30px;
+  }
+  .cardbox {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .greySection {
+    .cardbox {
+      flex-direction: column;
+    }
+  }
+}
